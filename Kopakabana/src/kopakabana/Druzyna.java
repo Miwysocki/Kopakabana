@@ -5,6 +5,7 @@
  */
 package kopakabana;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
@@ -16,28 +17,17 @@ import java.util.Scanner;
  */
 public class Druzyna {
     Scanner scan = new Scanner(System.in);    
-    List <Druzyna> druzyny = new LinkedList<>();
     List <Osoba> sklad = new LinkedList<>();
     String nazwa;
     int id,punkty;
     
-    void zglos(){
+    Druzyna zglos(){
         Druzyna r = new Druzyna();
         System.out.println("Podaj nazwe druzyny ");
         r.nazwa = scan.nextLine();
         System.out.println("Podaj id druzyny ");
         r.id = scan.nextInt();
         r.punkty = 0;
-        druzyny.add(r);
-    }
-   
-    void przeglad(){
-        for (Druzyna i : druzyny){
-            System.out.println(i.nazwa+" "+i.punkty);
-            }
-        }
-    
-    void wycofaj(){
-        
+        return r;
     }
 }
