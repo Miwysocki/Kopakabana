@@ -13,9 +13,19 @@ import java.util.Scanner;
  *
  * @author tuptu
  */
-public class Baza {
-    Scanner scan = new Scanner(System.in);    
-    List<Sedzia> sedziowie = new LinkedList<>();
+public class Baza { 
+    //statyczne    
+    public static  List<Sedzia> sedziowie = new LinkedList<>();
+    public static List <Druzyna> druzyny = new LinkedList<>(); 
+    public static List <Osoba> gracze = new LinkedList<>();
+    
+    void usun(Osoba szukana, String x){
+        switch(x){
+            case "s":
+        }
+    }
+    
+    Scanner scan = new Scanner(System.in);
     void pokaz_sedziow(){
         for (Sedzia i : sedziowie){
             System.out.println(i.imie+" "+i.nazwisko);
@@ -37,8 +47,8 @@ public class Baza {
         if(znaleziono == false) System.out.println("nie znazleziono takiej owoby w bazie");
     }
 
-    List <Druzyna> druzyny = new LinkedList<>();
-    void pokaz_druzyny(){
+    
+   public void pokaz_druzyny(){ //tabela wyników
         for (Druzyna i : druzyny){
             System.out.println(i.nazwa+" punkty: "+i.punkty);
             }

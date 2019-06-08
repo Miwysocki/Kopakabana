@@ -31,7 +31,7 @@ public class Sedzia extends Osoba implements Serializable{
     Scanner scan = new Scanner(System.in);
      public Sedzia() {
     }
-    Sedzia dodajSedziego(){
+    Sedzia dodajSedziego(){ // w sumie nieważne jeśli  robimy gui
         Sedzia s = new Sedzia();
         System.out.println("Podaj id sedziego ");
          int nr = scan.nextInt();

@@ -5,6 +5,9 @@
  */
 package kopakabana;
 
+import java.util.Scanner;
+import javax.swing.JFrame;
+
 /**
  *
  * @author Student
@@ -16,8 +19,10 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
-     
+JFrame f = new StartFrame();
+f.setVisible(true);
     }
-    
+
 }
+    
+

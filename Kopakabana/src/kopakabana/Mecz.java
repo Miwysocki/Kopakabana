@@ -18,4 +18,7 @@ public class Mecz {
     Sedzia pomocniczy_2;
     float pkt_gosp, pkt_gosci; //punkty 
     String wynik = pkt_gosp+":"+pkt_gosci;
+    void wypisz_wynik(Mecz m){
+        System.out.println(m.wynik);
+    }
 }
