@@ -10,7 +10,7 @@ package kopakabana;
  * @author Student
  */
 public class Osoba {
-    int id;
+    public static int id = 0;
     public Osoba(){};
     public Osoba(int id, String imie, String nazwisko) {
         this.id = id;

@@ -19,8 +19,9 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-JFrame f = new StartFrame();
-f.setVisible(true);
+    JFrame f = new StartFrame();
+    f.setVisible(true);
+
     }
 
 }

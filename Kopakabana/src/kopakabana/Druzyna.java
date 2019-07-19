@@ -5,29 +5,53 @@
  */
 package kopakabana;
 
-import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
+
 
 
 /**
  *
  * @author Student
  */
-public class Druzyna {
+public class Druzyna implements Comparable<Druzyna> {
     Scanner scan = new Scanner(System.in);    
     List <Osoba> sklad = new LinkedList<>();
     String nazwa;
-    int id,punkty;
-    
-    Druzyna zglos(){
-        Druzyna r = new Druzyna();
-        System.out.println("Podaj nazwe druzyny ");
-        r.nazwa = scan.nextLine();
-        System.out.println("Podaj id druzyny ");
-        r.id = scan.nextInt();
-        r.punkty = 0;
-        return r;
+//<<<<<<< HEAD
+ //   int id, punkty;
+//=======
+    int id;
+    Integer punkty;
+//>>>>>>> origin/master
+    Druzyna(){
+        this.punkty = 0;
     }
-}
+//<<<<<<< HEAD
+    
+    public String getName(){
+        return nazwa;
+    }
+    
+    public int getPoints(){
+        return punkty;
+    }
+    
+
+//=======
+    public Integer getPunkty()
+    {return punkty;}
+    @Override 
+    public int compareTo(Druzyna o) {
+      return this.getPunkty().compareTo(o.getPunkty());
+    }
+    @Override
+    public String toString(){
+    String wynik;
+    wynik=nazwa+" "+id+" "+punkty+"\n";
+    return wynik;
+    }
+ }
+
+//>>>>>>> origin/master

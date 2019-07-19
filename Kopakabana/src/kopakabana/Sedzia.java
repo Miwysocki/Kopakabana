@@ -28,19 +28,9 @@ public class Sedzia extends Osoba implements Serializable{
     public Sedzia(int id, String imie, String nazwisko) {
         super(id, imie, nazwisko);
     } 
-    Scanner scan = new Scanner(System.in);
      public Sedzia() {
     }
-    Sedzia dodajSedziego(){ // w sumie nieważne jeśli  robimy gui
-        Sedzia s = new Sedzia();
-        System.out.println("Podaj id sedziego ");
-         int nr = scan.nextInt();
-         s.id = nr;
-        System.out.println("Podaj imie i nazwisko sedziego ");
-         s.imie = scan.nextLine();
-         s.nazwisko = scan.nextLine();     
-         return s;
-    }     
+   
      /*
     public void save(String fileName) throws FileNotFoundException {
     PrintWriter pw = new PrintWriter(new FileOutputStream(fileName));
